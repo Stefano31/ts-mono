@@ -5,6 +5,7 @@
 - Monorepository handler: [LernaJS](https://lerna.js.org/)
 - Package templater: [Lerna-templater](https://github.com/rdarida/lerna-templater)
 - Linter: [TS-standard](https://github.com/standard/ts-standard)
+- Commit checker: [Husky + Conventional commit](https://github.com/conventional-changelog/commitlint)
 - Test: [Jest](https://jestjs.io/)
 - Build: [Tsup](https://github.com/egoist/tsup)
 
