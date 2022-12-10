@@ -1,0 +1,4 @@
+FROM node:lts
+
+WORKDIR /aws-monorepo
+COPY . /aws-monorepo

@@ -5,7 +5,11 @@
     "packages/*"
   ],
   "scripts": {
-    "create": "lerna-templater"
+    "create": "lerna-templater",
+    "test": "npm run build && npx lerna run test",
+    "build": "npx lerna run build",
+    "bootstrap": "npx lerna bootstrap",
+    "setup": "npm i && npm run bootstrap"
   },
   "devDependencies": {
     "lerna": "^6.0.3",
