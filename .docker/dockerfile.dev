@@ -1,4 +1,6 @@
 FROM node:lts
 
+RUN apt-get install git
+
 WORKDIR /aws-monorepo
 COPY . /aws-monorepo
