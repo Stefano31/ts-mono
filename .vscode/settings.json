@@ -1,0 +1,31 @@
+{
+  "editor.tabSize": 2,
+  "standard.engine": "ts-standard",
+  "standard.autoFixOnSave": true,
+  // Prevents VS Code from formatting JavaScript with the default linter
+  "javascript.format.enable": false,
+
+  // Prevents VS Code linting JavaScript with the default linter
+  "javascript.validate.enable": false,
+
+  // Lints with Standard JS
+  "standard.enable": true,
+  // "standard.enableGlobally": true,
+
+  // Files to validate with Standard JS
+  "standard.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+
+  "standard.run": "onType",
+
+  "[javascript]": {
+    "editor.defaultFormatter": null
+  }
+}

@@ -1,0 +1,3 @@
+- Add typedoc and docusaurus
+- Husky
+- Conventional commit

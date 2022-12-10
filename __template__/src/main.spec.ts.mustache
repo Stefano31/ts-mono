@@ -1,0 +1,8 @@
+import { whoIam } from './main'
+
+describe('main', () => {
+  it('should return value', () => {
+    const value = whoIam()
+    expect(value).toEqual('{{{name}}}')
+  })
+})
