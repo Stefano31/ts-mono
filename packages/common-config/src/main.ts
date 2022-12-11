@@ -1,8 +1,14 @@
+/**
+ * Jest configuration
+ */
 export const JestConfig = {
   preset: 'ts-jest',
   testEnvironment: 'node'
 }
 
+/**
+ * Tsup configuration
+ */
 export const TsupConfig = {
   entry: [
     'src/main.ts'

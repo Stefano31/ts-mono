@@ -1,0 +1,8 @@
+{
+  "entryPointStrategy": "packages",
+  "entryPoints": [
+    // Packages that will included in the documentation
+    "packages/*"
+  ],
+  "out": "doc"
+}

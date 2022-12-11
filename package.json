@@ -10,15 +10,18 @@
     "build": "npx lerna run build",
     "bootstrap": "npx lerna bootstrap",
     "setup": "npm i && npm run bootstrap",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "gen-doc": "npx typedoc"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
+    "@tsconfig/node-lts-strictest-esm": "^18.12.1",
     "husky": "^8.0.2",
     "lerna": "^6.0.3",
     "lerna-templater": "^1.4.3",
-    "ts-standard": "^12.0.1"
+    "ts-standard": "^12.0.1",
+    "typedoc": "^0.23.22"
   },
   "ts-standard": {
     "project": "./tsconfig.json"

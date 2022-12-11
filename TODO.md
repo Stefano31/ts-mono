@@ -1,1 +1,0 @@
-- Add typedoc and docusaurus
