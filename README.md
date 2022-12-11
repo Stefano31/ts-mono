@@ -11,6 +11,7 @@ The goal is to solve quickly this points:
 - Have a base for Docker
 - Have a tool for testing
 - Have a common configurations (jest, tsup, etc) shared between other packages
+- Have debugger configurated for VS code
 
 Let's fork and try it!
 Any suggest is welcome!

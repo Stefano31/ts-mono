@@ -10,6 +10,20 @@
       "name": "Attach (bar package)",
       "remoteRoot": "/aws-monorepo",
       "port": 9229
+    },
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Attach (foo package)",
+      "remoteRoot": "/aws-monorepo",
+      "port": 9230
+    },
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Attach (cli package)",
+      "remoteRoot": "/aws-monorepo",
+      "port": 9232
     }
   ]
 }

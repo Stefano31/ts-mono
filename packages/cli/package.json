@@ -1,8 +1,9 @@
 {
-  "name": "{{{scope}}}{{{name}}}",
+  "name": "cli",
   "version": "0.0.0",
-  "description": "{{description}}",
+  "description": "Command line interface",
   "author": "",
+  "private": true,
   "homepage": "",
   "license": "ISC",
   "main": "src/main.ts",
@@ -13,16 +14,22 @@
     "src"
   ],
   "scripts": {
+    "cli": "tsup src/bin/ui.ts --watch --onSuccess \"node dist/ui.mjs\"",
     "test": "jest",
-    "test:debug": "node --inspect-brk=0.0.0.0:_PORT_HERE_UNIQUE_IN_MONOREPO_ ../../node_modules/.bin/jest --runInBand",
+    "test:debug:cli": "node --inspect-brk=0.0.0.0:9232 ../../node_modules/.bin/jest --runInBand",
     "build": "tsup"
   },
   "devDependencies": {
+    "@types/inquirer": "^9.0.3",
     "@types/jest": "^29.2.4",
     "common-config": "^0.0.0",
     "jest": "^29.3.1",
     "ts-jest": "^29.0.3",
     "tsup": "^6.5.0",
     "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "fp-ts": "^2.13.1",
+    "inquirer": "^9.1.4"
   }
 }
