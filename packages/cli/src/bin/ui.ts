@@ -2,10 +2,14 @@ import inquirer from 'inquirer'
 import path from 'node:path'
 import { getPortsFromDirPackages } from '../main'
 
-async function main () {
-  const ports = await getPortsFromDirPackages(path.join(__dirname, '..', '..', '..', '..'))
+async function main (): Promise<void> {
+  const dirPackages = path.join(__dirname, '..', '..', '..')
+  const ports = await getPortsFromDirPackages(dirPackages)
+  const freePort = ports.getFreePort(9000, 9999)
+  console.log('freePort', freePort)
+  console.log('PORTS', ports)
 
-  const asnwers = inquirer
+  const asnwers = await inquirer
     .prompt([
       {
         name: 'package.name',
@@ -18,10 +22,12 @@ async function main () {
       {
         name: 'debug.port',
         type: 'number',
-        validate: (input) =>  (typeof input === 'string' && ports.get(input) === undefined)
+        default: freePort,
+        validate: (input) =>
+          (typeof input === 'number' && ports.get(input.toString()) === undefined)
       }
     ])
   console.log(asnwers)
 }
 
-main()
+main().catch((e) => console.error(e))

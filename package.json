@@ -5,7 +5,7 @@
     "packages/*"
   ],
   "scripts": {
-    "create": "lerna-templater",
+    "plop": "plop",
     "test": "npm run build && npx lerna run test",
     "build": "npx lerna run build",
     "bootstrap": "npx lerna bootstrap",
@@ -19,7 +19,7 @@
     "@tsconfig/node-lts-strictest-esm": "^18.12.1",
     "husky": "^8.0.2",
     "lerna": "^6.0.3",
-    "lerna-templater": "^1.4.3",
+    "plop": "^3.1.1",
     "ts-standard": "^12.0.1",
     "typedoc": "^0.23.22"
   },

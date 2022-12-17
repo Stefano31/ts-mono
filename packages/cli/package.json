@@ -14,10 +14,11 @@
     "src"
   ],
   "scripts": {
-    "cli": "tsup src/bin/ui.ts --watch --onSuccess \"node dist/ui.mjs\"",
+    "cli": "tsup --watch --onSuccess \"node dist/bin/ui.mjs\"",
     "test": "jest",
     "test:debug:cli": "node --inspect-brk=0.0.0.0:9232 ../../node_modules/.bin/jest --runInBand",
-    "build": "tsup"
+    "build": "tsup",
+    "build:w": "tsup --watch"
   },
   "devDependencies": {
     "@types/inquirer": "^9.0.3",

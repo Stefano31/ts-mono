@@ -1,5 +1,5 @@
 {
-  "name": "{{{scope}}}{{{name}}}",
+  "name": "{{scope}}{{name}}",
   "version": "0.0.0",
   "description": "{{description}}",
   "author": "",
@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "test": "jest",
-    "test:debug": "node --inspect-brk=0.0.0.0:_PORT_HERE_UNIQUE_IN_MONOREPO_ ../../node_modules/.bin/jest --runInBand",
+    "test:debug": "node --inspect-brk=0.0.0.0:{{port}} ../../node_modules/.bin/jest --runInBand",
     "build": "tsup"
   },
   "devDependencies": {

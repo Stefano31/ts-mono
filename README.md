@@ -22,7 +22,7 @@ Only docker.
 ## Tools
 - [Docker](https://www.docker.com/)
 - Monorepository handler: [LernaJS](https://lerna.js.org/)
-- Package templater: [Lerna-templater](https://github.com/rdarida/lerna-templater)
+- Package templater: [Plop](https://plopjs.com/)
 - Linter: [TS-standard](https://github.com/standard/ts-standard)
 - Commit checker: [Husky + Conventional commit](https://github.com/conventional-changelog/commitlint)
 - Test: [Jest](https://jestjs.io/)
@@ -40,7 +40,7 @@ docker-compose run app npm run setup
 
 ## Create new package
 ```bash
-docker-compose run app npm run create -- -n "Name of the new package" -d "Description of the new package"
+docker-compose run app npm run plop library
 ```
 
 ## Build
