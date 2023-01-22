@@ -15,7 +15,7 @@
     "src": "src"
   },
   "files": [
-    "src"
+    "dist"
   ],
   "tsup": {
     "entry": [

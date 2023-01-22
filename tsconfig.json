@@ -1,5 +1,5 @@
 {
   // This config is used only for the linter (ts-standand)
   "extends": "@tsconfig/node-lts-strictest-esm/tsconfig.json",
-  "exclude": ["__template__", "commitlint.config.js", "packages/*/dist", "doc", "packages/*/*.js"]
+  "exclude": ["commitlint.config.js", "packages/*/dist", "doc", "packages/*/*.js", "plop-templates", "plopfile.mjs"]
 }

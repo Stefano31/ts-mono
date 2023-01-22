@@ -1,8 +1,8 @@
 # Monorepository
 
-This is a awesome boilerplate for a monorepository enterelly in Typescript using LernaJS.
+This is a awesome boilerplate for a monorepository in Typescript using LernaJS.
 
-The goal is to solve quickly this points:
+The goal is to solve quickly these points:
 - Have a templater for generating a new package inside the monorepository (zero thinkings, only coding)
 - Have a linter that checks your code
 - Have a standard for your commits
@@ -33,27 +33,35 @@ Only docker.
 
 This package contains shared configurations between the other packages inside the monorepository.
 
-## Setup
-```bash
-docker-compose run app npm run setup
+## Commands
+
+Before start to use the commands make sure give the following permit
+
+```
+chmod +x dc-run.sh
 ```
 
-## Create new package
+### Setup
 ```bash
-docker-compose run app npm run plop library
+./dc-run npm run setup
 ```
 
-## Build
+### Create new package
 ```bash
-docker-compose run app npm run build
+./dc-run npm run plop library
 ```
 
-## Test
+### Build
 ```bash
-docker-compose run app npm run test
+./dc-run npm run build
 ```
 
-## Generate documentation
+### Test
 ```bash
-docker-compose run app npm run gen-doc
+./dc-run npm run test
+```
+
+### Generate documentation
+```bash
+./dc-run npm run gen-doc
 ```
